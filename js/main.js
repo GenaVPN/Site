@@ -48,18 +48,29 @@ $(function() {
     });
 })
 
+$(function() {
+    $('.slider-price').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        draggable: false,
+        arrows: false,
+        responsive:[
+            {
+                breakpoint: 950,
+                settings: {
+                    slidesToShow:1,
+                    slidesToScroll:1,
+                }
+            }
+        ]
+    });
+    $('#rp').on('click', function() {
+        $('.slider-price').slick('slickNext');
+    });
+    $('#lp').on('click', function() {
+        $('.slider-price').slick('slickPrev');
+    });
+})
 
 
-
-
-
-
-
-
-
-// $(document).ready(function() {
-// 	$('.header__burger').click(function(event) {
-// 		$('.slider, .slider2').toggleClass('active');
-// 		$('body').toggleClass('lock');
-// 	});
-// });

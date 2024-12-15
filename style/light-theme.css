@@ -1,0 +1,84 @@
+:root {
+    --background-color:  #030304f4;
+    --text-color: whitesmoke;
+    --wtext-color: whitesmoke;
+  }
+
+
+body.th-lig{
+    background-color: #F3F3FF;
+    --text-color:  #00002E;
+}
+
+
+
+.arrow .st0{
+    fill:var(--text-color);
+}
+
+.arrow .st1{
+    fill:none;
+    stroke:var(--text-color);
+    stroke-width:8;
+    stroke-miterlimit:10;
+}
+#lp .st0, #rp .st0{
+    fill:#00002E;
+}
+#lp .st1, #rp .st1{
+    stroke: #00002E;
+}
+
+
+
+.mini{
+    fill: var(--text-color);
+}
+
+
+#theme-toggle{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(53, 69, 159, 0.712);
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+    transition: background-color .4s,color .4s;
+}
+
+#theme-toggle svg{
+    /* width: 80%; */
+    
+}
+
+
+@media(max-width: 600px){
+    #theme-toggle{
+        width: 35px;
+        height: 35px;
+    }
+}
+.thn{
+    
+}
+
+#moon{
+    display: block;
+    transition: display .4s;
+}
+#sun{
+    display: none;
+    transition: display .4s;
+    /* rgba(234, 234, 1, 0.362) */
+}
+
+body.th-lig #theme-toggle{
+    background-color:rgba(234, 234, 1, 0.362);
+}
+
+body.th-lig #moon{
+    display: none;
+}
+body.th-lig #sun{
+    display: block;
+}

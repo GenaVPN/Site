@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/light-theme.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>TECHNOLOG</title>
 </head>
 <body>
@@ -16,14 +19,44 @@
                 
                 <div class="buttons bt">
                     <div class="buttons">
-                        <li>Цены</li>
-                        <li>Вопросы</li>
-                        <li class="bef"> <img src="static/images/dollar.png" alt=""></li>
-                        <li class="bef"><img src="static/images/voprs.png" alt=""></li>
+                        <li ><button id="theme-toggle">
+                            <svg class="thn" id="sun" 
+viewBox="0 0 64 64"  >
+<g>
+<circle fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" cx="32.003" cy="32.005" r="16.001"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M12.001,31.997c0-2.211-1.789-4-4-4H4c-2.211,0-4,1.789-4,4
+  s1.789,4,4,4h4C10.212,35.997,12.001,34.208,12.001,31.997z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M12.204,46.139l-2.832,2.833c-1.563,1.562-1.563,4.094,0,5.656
+  c1.562,1.562,4.094,1.562,5.657,0l2.833-2.832c1.562-1.562,1.562-4.095,0-5.657C16.298,44.576,13.767,44.576,12.204,46.139z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M32.003,51.999c-2.211,0-4,1.789-4,4V60c0,2.211,1.789,4,4,4
+  s4-1.789,4-4l-0.004-4.001C36.003,53.788,34.21,51.999,32.003,51.999z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M51.798,46.143c-1.559-1.566-4.091-1.566-5.653-0.004
+  s-1.562,4.095,0,5.657l2.829,2.828c1.562,1.57,4.094,1.562,5.656,0s1.566-4.09,0-5.656L51.798,46.143z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M60.006,27.997l-4.009,0.008
+  c-2.203-0.008-3.992,1.781-3.992,3.992c-0.008,2.211,1.789,4,3.992,4h4.001c2.219,0.008,4-1.789,4-4
+  C64.002,29.79,62.217,27.997,60.006,27.997z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M51.798,17.859l2.828-2.829c1.574-1.566,1.562-4.094,0-5.657
+  c-1.559-1.567-4.09-1.567-5.652-0.004l-2.829,2.836c-1.562,1.555-1.562,4.086,0,5.649C47.699,19.426,50.239,19.418,51.798,17.859z"
+  />
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M32.003,11.995c2.207,0.016,4-1.789,4-3.992v-4
+  c0-2.219-1.789-4-4-4c-2.211-0.008-4,1.781-4,3.993l0.008,4.008C28.003,10.206,29.792,11.995,32.003,11.995z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" d="M12.212,17.855c1.555,1.562,4.079,1.562,5.646-0.004
+  c1.574-1.551,1.566-4.09,0.008-5.649l-2.829-2.828c-1.57-1.571-4.094-1.559-5.657,0c-1.575,1.559-1.575,4.09-0.012,5.653
+  L12.212,17.855z"/>
+</g>
+</svg>
+<svg class="thn" id="moon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#1C274C"/>
+    </svg>
+                        </button></li>
+                        <li class="N"><a href="#cena">Цены</a></li>
+                        <li class="N">Вопросы</li>
+                        <li class="bef"> <img src="static/images/dollar.png" alt="" draggable="false"></li>
+                        <li class="bef"><img src="static/images/voprs.png" alt="" draggable="false"></li>
                     </div>
-                    <a href="tel:+79999999999">+7 999 999-99-99</a>
+                    <a class="telephone" href="tel:+79999999999">+7 999 999-99-99</a>
                     <a id="trubka" href="tel:+79999999999">
-                        <img src="static/images/free-icon-phone-1151429.png" alt="">
+                        <img src="static/images/free-icon-phone-1151429.png" alt="" draggable="false">
                     </a>
                 </div>
                 
@@ -111,19 +144,42 @@
                     </div>
                 </div>
                 <div class="arrows">
-                    <img id="arrow-left" src="static/images/circle-arrow-left.svg" alt="" draggable="false">
-                    <img id="arrow-right" src="static/images/circle-arrow-right.svg" alt="" draggable="false">
+                    
+                    <svg class="arrow" id="arrow-left" xmlns="http://www.w3.org/2000/svg"  
+                        viewBox="0 0 279.9 279.9"  >
+
+
+        
+                    <g>
+                        <path class="st0" d="M157.8,81.1c-1,0-1.9,0.4-2.7,1.2l-54.5,54.5c-0.8,0.8-1.2,1.7-1.2,2.7c0,1,0.4,1.9,1.2,2.7l54.5,54.5
+                            c0.8,0.8,1.7,1.2,2.7,1.2c1,0,1.9-0.4,2.7-1.2l5.8-5.8c0.8-0.8,1.2-1.7,1.2-2.7c0-1-0.4-1.9-1.2-2.7l-46-46l46-46
+                            c0.8-0.8,1.2-1.7,1.2-2.7c0-1-0.4-1.9-1.2-2.7l-5.8-5.8C159.7,81.5,158.8,81.1,157.8,81.1z"/>
+                    </g>
+                    <circle class="st1" cx="140" cy="140" r="133.7"/>
+                    </svg>
+
+                    <svg class="arrow" id="arrow-right" xmlns="http://www.w3.org/2000/svg" 
+	 viewBox="0 0 279.9 279.9" >
+
+<g>
+	<path class="st0" d="M120.4,82.3l-5.8,5.8c-0.8,0.8-1.2,1.7-1.2,2.7c0,1,0.4,1.9,1.2,2.7l46,46l-46,46c-0.8,0.8-1.2,1.7-1.2,2.7
+		c0,1,0.4,1.9,1.2,2.7l5.8,5.8c0.8,0.8,1.7,1.2,2.7,1.2c1,0,1.9-0.4,2.7-1.2l54.5-54.5c0.8-0.8,1.2-1.7,1.2-2.7c0-1-0.4-1.9-1.2-2.7
+		l-54.5-54.5c-0.8-0.8-1.7-1.2-2.7-1.2C122.1,81.1,121.2,81.5,120.4,82.3z"/>
+</g>
+<circle class="st1" cx="140" cy="140" r="133.7"/>
+</svg>
                 </div>
             </div>
             
         </section>
+       
         <section class="otzs">
                 <h1>Что о нас говорят люди</h1>
                 
                 <div class="FOTO">
                     <img class="fotka" src="static/images/Wavy_Bus-16_Single-12.jpg" alt="">
                     <div class="reviews" >
-                        <div class="slider2  f-s"> 
+                        <div class="slider2  f-s">
                             <div class="review f-s">
                                 
                                     <h3>Иванов А.М.</h3>
@@ -160,33 +216,134 @@
                         </div>
                        
                         <div class="arrows2 ">
-                            <img id="left" src="static/images/circle-arrow-left.svg" alt="" draggable="false">
-                            <img id="right" src="static/images/circle-arrow-right.svg" alt="" draggable="false">
+                            <svg class="arrow" id="left" xmlns="http://www.w3.org/2000/svg"  
+                        viewBox="0 0 279.9 279.9"  >
+
+
+        
+                    <g>
+                        <path class="st0" d="M157.8,81.1c-1,0-1.9,0.4-2.7,1.2l-54.5,54.5c-0.8,0.8-1.2,1.7-1.2,2.7c0,1,0.4,1.9,1.2,2.7l54.5,54.5
+                            c0.8,0.8,1.7,1.2,2.7,1.2c1,0,1.9-0.4,2.7-1.2l5.8-5.8c0.8-0.8,1.2-1.7,1.2-2.7c0-1-0.4-1.9-1.2-2.7l-46-46l46-46
+                            c0.8-0.8,1.2-1.7,1.2-2.7c0-1-0.4-1.9-1.2-2.7l-5.8-5.8C159.7,81.5,158.8,81.1,157.8,81.1z"/>
+                    </g>
+                    <circle class="st1" cx="140" cy="140" r="133.7"/>
+                    </svg>
+
+                    <svg class="arrow"  id="right" xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 279.9 279.9"  >
+               
+               <g>
+                   <path class="st0" d="M120.4,82.3l-5.8,5.8c-0.8,0.8-1.2,1.7-1.2,2.7c0,1,0.4,1.9,1.2,2.7l46,46l-46,46c-0.8,0.8-1.2,1.7-1.2,2.7
+                       c0,1,0.4,1.9,1.2,2.7l5.8,5.8c0.8,0.8,1.7,1.2,2.7,1.2c1,0,1.9-0.4,2.7-1.2l54.5-54.5c0.8-0.8,1.2-1.7,1.2-2.7c0-1-0.4-1.9-1.2-2.7
+                       l-54.5-54.5c-0.8-0.8-1.7-1.2-2.7-1.2C122.1,81.1,121.2,81.5,120.4,82.3z"/>
+               </g>
+               <circle class="st1" cx="140" cy="140" r="133.7"/>
+               </svg>
                         </div>
                     </div>
                     
                 </div>
             
         </section>
+        <section>
+            <div id="cena" class="pris">
+                <div class="slider-price">
+                    <div class="price-el f-s">
+                        <img src="static/images/1.webp" alt="">
+                        <p class="bolt" >Набор на 1м2 резиновое покрытие</p>
+                        <p class="color">Цвет: Серый</p>
+                        <button class="glow-on-hover bpr" >1500 Р</button>
+                    </div>
+                    <div class="price-el f-s">
+                        <img src="static/images/2.webp" alt="">
+                        <p class="bolt" >Набор на 1м2 резиновое покрытие</p>
+                        <p class="color">Цвет: Оранжевый</p>
+                        <button class="glow-on-hover bpr">1900 Р</button>
+                    </div>
+                    <div class="price-el f-s">
+                        <img src="static/images/3.webp" alt="">
+                        <p class="bolt" >Набор на 1м2 резиновое покрытие</p>
+                        <p class="color">Цвет: Коричневый</p>
+                        <button class="glow-on-hover bpr">1800 Р</button>
+                    </div>
+                    <div class="price-el f-s">
+                        <img src="static/images/4.webp" alt="">
+                        <p class="bolt" >Набор на 1м2 резиновое покрытие</p>
+                        <p class="color">Цвет: Зеленый</p>
+                        <button class="glow-on-hover bpr">1700 Р</button>
+                    </div>
+                    <div class="price-el f-s">
+                        <img src="static/images/5.webp" alt="">
+                        <p class="bolt" >Набор на 1м2 резиновое покрытие</p>
+                        <p class="color">Цвет: Желтый</p>
+                        <button class="glow-on-hover bpr">1300 Р</button>
+                    </div>
+                    
+                    <div class="price-el f-s">
+                        <img src="static/images/7.webp" alt="">
+                        <p class="bolt" >Набор на 1м2 резиновое покрытие</p>
+                        <p class="color">Цвет: Красный</p>
+                        <button class="glow-on-hover bpr">2200 Р</button>
+                    </div>
+                </div>
+                <div class="arrows a2">
+                                <svg class="arrow" id="lp" xmlns="http://www.w3.org/2000/svg"  
+                                        viewBox="0 0 279.9 279.9"  >
+    
+    
+                        
+                                    <g>
+                                        <path class="st0" d="M157.8,81.1c-1,0-1.9,0.4-2.7,1.2l-54.5,54.5c-0.8,0.8-1.2,1.7-1.2,2.7c0,1,0.4,1.9,1.2,2.7l54.5,54.5
+                                            c0.8,0.8,1.7,1.2,2.7,1.2c1,0,1.9-0.4,2.7-1.2l5.8-5.8c0.8-0.8,1.2-1.7,1.2-2.7c0-1-0.4-1.9-1.2-2.7l-46-46l46-46
+                                            c0.8-0.8,1.2-1.7,1.2-2.7c0-1-0.4-1.9-1.2-2.7l-5.8-5.8C159.7,81.5,158.8,81.1,157.8,81.1z"/>
+                                    </g>
+                                    <circle class="st1" cx="140" cy="140" r="133.7"/>
+                                    </svg>
+    
+                                    <svg class="arrow" id="rp" xmlns="http://www.w3.org/2000/svg" 
+                                        viewBox="0 0 279.9 279.9" >
+    
+                                    <g>
+                                        <path class="st0" d="M120.4,82.3l-5.8,5.8c-0.8,0.8-1.2,1.7-1.2,2.7c0,1,0.4,1.9,1.2,2.7l46,46l-46,46c-0.8,0.8-1.2,1.7-1.2,2.7
+                                            c0,1,0.4,1.9,1.2,2.7l5.8,5.8c0.8,0.8,1.7,1.2,2.7,1.2c1,0,1.9-0.4,2.7-1.2l54.5-54.5c0.8-0.8,1.2-1.7,1.2-2.7c0-1-0.4-1.9-1.2-2.7
+                                            l-54.5-54.5c-0.8-0.8-1.7-1.2-2.7-1.2C122.1,81.1,121.2,81.5,120.4,82.3z"/>
+                                    </g>
+                                    <circle class="st1" cx="140" cy="140" r="133.7"/>
+                                    </svg>
+                </div>
+            </div>
+            
+        </section>
         <section class="send">
             <h1>Оставить заявку</h1>
             
             <form  action="">
-                <input type="text" name="name" placeholder="ФИО">
-                <input type="text" name="s_name" placeholder="Телефон">
+                <input type="text" name="name" placeholder="ФИО" required>
+                <input type="text" name="number" placeholder="Телефон" required>
                 <input type="text" placeholder="Почта" required>
                 <textarea rows="3" name="" id="" placeholder="Сообщение"></textarea>
                 <button class="glow-on-hover" type="submit">Отправить</button>
             </form>
         
         </section>
+
+
+        
     </main>
     <footer>
         <div class="fot">
-            <a href="tel:+7999999999">+7999999999</a>
+            <a class="foota" href="tel:+7999999999">+7999999999</a>
             <div class="soc">
-                <img src="static/images/telegram.png" alt="">
-                <img src="static/images/whatsapp.png" alt="">
+                <a class="foota" href="https://web.telegram.org/">
+                <svg class="mini" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 0.5c-8.563 0-15.5 6.938-15.5 15.5s6.938 15.5 15.5 15.5c8.563 0 15.5-6.938 15.5-15.5s-6.938-15.5-15.5-15.5zM23.613 11.119l-2.544 11.988c-0.188 0.85-0.694 1.056-1.4 0.656l-3.875-2.856-1.869 1.8c-0.206 0.206-0.381 0.381-0.781 0.381l0.275-3.944 7.181-6.488c0.313-0.275-0.069-0.431-0.482-0.156l-8.875 5.587-3.825-1.194c-0.831-0.262-0.85-0.831 0.175-1.231l14.944-5.763c0.694-0.25 1.3 0.169 1.075 1.219z"/>
+                    
+                    </svg>
+                    </a>
+                  <a class="foota" href="https://web.whatsapp.com/">
+                  <svg class="mini" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"/><path d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"/>               
+                </svg>
+            </a>
             </div>
             
         </div>
@@ -198,6 +355,7 @@
 
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/libs/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/Theme.js"></script>
 </html>
 
 
