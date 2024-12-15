@@ -601,9 +601,11 @@ form textarea{
         display: flex;
     }
     .bt{
-        gap: 20px;
+        gap: 15px;
     }
-    
+    .buttons{
+        gap: 15px;
+    }
 }
 
 /*------------------------*/

@@ -11,7 +11,10 @@ body.th-lig{
 }
 
 
-
+.probka{
+    display: flex;
+    align-items: center;
+}
 .arrow .st0{
     fill:var(--text-color);
 }
