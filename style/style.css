@@ -59,6 +59,7 @@ p, a{
     flex-direction: column;
 }
 header{
+    margin-top: 5px;
     height: 100px;
 }
 .Logo h1{
@@ -75,6 +76,8 @@ li{
     list-style-type: none;
     transition: all .3s;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 li:hover{
     opacity: 0.5;
@@ -84,11 +87,13 @@ li:hover{
     font-size: 32px;
     font-family: Nunito-med;
     gap: 20px;
+    
 }
 .bt{
     gap: 40px;
 }
 .main-content{
+    
     max-width: 1200px;
     margin: 0 auto;
     
@@ -326,6 +331,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 30px;
 }
 .soc{
     display: flex;
@@ -360,7 +366,7 @@ footer{
         display: none;
     }
     #trubka{
-        display: block;
+        display: flex;
     }
 }
 
@@ -391,6 +397,13 @@ footer{
     #trubka img{
         width: 35px;
     }
+    form input,
+form textarea{
+    
+    font-size: 22px;
+    width: 70%;
+    
+}
 }
 
 @media(max-width: 500px){
@@ -424,7 +437,7 @@ footer{
         display: none;
     }
     .bef{
-        display: block;
+        display: flex;
     }
     .bt{
         gap: 20px;
